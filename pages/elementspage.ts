@@ -9,8 +9,13 @@ export default class ElementsPage {
 
     async clickOnWebTables() {
         
-         this.page.getByText('Web Tables').click();
+      await   this.page.getByText('Web Tables').click();
 
         
     }
+    async clickOnBrokenlinks() {
+        
+      await  this.page.getByText('Broken Links - Images').click();
+
+   }
 }

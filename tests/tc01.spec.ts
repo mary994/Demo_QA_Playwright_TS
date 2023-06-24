@@ -7,7 +7,8 @@ test("Verify user can enter new data into the table", async ({page}) => {
     const homepage = new HomePage(page);
     const elementspage = new ElementsPage(page);
     const tablesPage = new TablesPage(page);
-    test.setTimeout(130000);
+    //as the page's loadig and response time is changeable we specify timeouts per test
+    test.setTimeout(3000000);
     await page.goto('https://demoqa.com/');
     await homepage.clickOnElements();
     await elementspage.clickOnWebTables();
@@ -26,7 +27,8 @@ test("Verify user can enter new data into the table", async ({page}) => {
 
 test("Verify user can edit the row in a table", async ({page}) => {
     const tablesPage = new TablesPage(page);
-    test.setTimeout(130000);
+    //as the page's loadig and response time is changeable we specify timeouts per test
+    test.setTimeout(3000000);
     await page.goto('https://demoqa.com/webtables');
     await tablesPage.clickEditButton();
     await tablesPage.editFirstname('Gerimedica');
