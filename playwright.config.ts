@@ -33,11 +33,11 @@ export default defineConfig({
   
   /* Configure projects for major browsers */
   projects: [
-   /* {
+   {
       name: 'chromium',
       use: { ...devices['Desktop Chrome'],
       headless : true, },
-    }, */
+    },
 
    /* {
       name: 'firefox',
@@ -45,7 +45,7 @@ export default defineConfig({
       headless: true },
     }, */
 
-    {
+    /*{
       name: 'webkit',
       use: { ...devices['Desktop Safari'],
       headless: false },

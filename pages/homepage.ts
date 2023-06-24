@@ -12,4 +12,11 @@ export default class HomePage {
             this.page.getByRole('heading', { name: 'Elements' }).click();
         
     }
+
+    async clickOnForms() {
+        
+        await   this.page.getByText('Forms').click();
+  
+          
+      }
 }
