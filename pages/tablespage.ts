@@ -49,4 +49,25 @@ export default class tablesPage {
        
    }
 
+   async clickEditButton() {
+        
+    await this.page.getByRole('row', { name: 'Alden Cantrell 45 alden@example.com 12000 Compliance Edit Delete' }).getByTitle('Edit').locator('path').click();
+
+   
+}
+   async editFirstname(fname : string) {
+        
+    await this.page.getByPlaceholder('First Name').fill(fname);
+   
+}
+
+async editLasttname(lname : string) {
+        
+    await this.page.getByPlaceholder('Last Name').fill(lname);
+   
+}
+
+
+    
+
 }
