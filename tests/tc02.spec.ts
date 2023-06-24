@@ -6,6 +6,7 @@ import TablesPage from '../pages/tablespage';
 test("Verify broken image", async ({page}) => {
 const homepage = new HomePage(page);
 const elementspage = new ElementsPage(page);
+//as the page's loadig and response time is changeable we specify timeouts per test
 test.setTimeout(3000000);
 await page.goto('https://demoqa.com/');
 await homepage.clickOnElements();
