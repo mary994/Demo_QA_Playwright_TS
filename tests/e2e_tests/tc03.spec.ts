@@ -1,7 +1,7 @@
 import {test, expect} from '@playwright/test';
-import HomePage from "../pages/homepage";
-import FormsPage from '../pages/formspage';
-import PracticeFormsPage from '../pages/practiceformpage';
+import HomePage from "../../pages/homepage";
+import FormsPage from '../../pages/formspage';
+import PracticeFormsPage from '../../pages/practiceformpage';
 
 test("Verify user can submit the form", async ({page}) => {
 const homepage = new HomePage(page);

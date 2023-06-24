@@ -1,7 +1,7 @@
 import {test, expect} from '@playwright/test';
-import HomePage from "../pages/homepage";
-import ElementsPage from "../pages/elementspage";
-import TablesPage from '../pages/tablespage';
+import HomePage from "../../pages/homepage";
+import ElementsPage from "../../pages/elementspage";
+import TablesPage from '../../pages/tablespage';
 
 test("Verify broken image", async ({page}) => {
 const homepage = new HomePage(page);

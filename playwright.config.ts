@@ -43,11 +43,7 @@ export default defineConfig({
       testDir: './src/e2e_tests',
       testMatch: /.*.spec.tsx/,
     },
-    {
-      name: 'api_tests',
-      testDir: './src/api_tests',
-      testMatch: /.*.spec.tsx/,
-    },
+    
 
    /* {
       name: 'firefox',
