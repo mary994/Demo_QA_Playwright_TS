@@ -44,4 +44,13 @@ export default class WidgetsPage {
 
           
       }
+    async clickOnTooltips() {
+
+        await this.page.getByText('Tool Tips').click();
+
+          
+      }
+    async hoverOnHoverMeButton() {
+        await this.page.locator('#toolTipButton').hover();
+    }
 }
