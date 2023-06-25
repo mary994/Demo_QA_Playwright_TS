@@ -19,4 +19,11 @@ export default class HomePage {
   
           
       }
+      async clickOnWidgets() {
+        
+        await this.page.getByRole('heading', { name: 'Widgets' }).click();
+
+  
+          
+      }
 }

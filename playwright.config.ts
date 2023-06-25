@@ -36,7 +36,7 @@ export default defineConfig({
    {
       name: 'chromium',
       use: { ...devices['Desktop Chrome'],
-      headless : true, },
+      headless : false, },
     },
     {
       name: 'e2e_tests',
