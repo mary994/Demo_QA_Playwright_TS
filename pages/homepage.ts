@@ -26,4 +26,10 @@ export default class HomePage {
   
           
       }
+      async clickOnInteractions() {
+        
+        await this.page.getByRole('heading', { name: 'Interactions' }).click();
+
+        
+    }
 }
